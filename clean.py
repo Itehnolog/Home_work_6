@@ -3,11 +3,13 @@ import os
 import sys
 import shutil
 from pathlib import Path
+
 """
 run: python clean.py "working_directory"
 """
 
-CYRILLIC_SYMBOLS = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяєіїґ'
+
+CYRILLIC_SYMBOLS = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяєіїґ"
 TRANSLATION = ("a", "b", "v", "g", "d", "e", "e", "j", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u",
                "f", "h", "ts", "ch", "sh", "sch", "", "y", "", "e", "yu", "u", "ja", "i", "je", "ji", "g")
 ARCHIVES = [".zip", ".gz", ".tar"]
@@ -92,6 +94,7 @@ def read_folder(path) -> None:
 
 
 # check for correct input
+
 if len(sys.argv) != 2:
     print("Incorrect input. Please input working folder")
     quit()
