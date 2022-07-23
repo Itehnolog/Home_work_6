@@ -69,7 +69,7 @@ def move_file(file: Path):
         new_path.mkdir(exist_ok=True, parents=True)
         shutil.move(file, new_path / normalize(file.name))
 
-# normalize(tralation) name file
+# normalize(translation) name file
 
 
 def normalize(name, folder=False):
